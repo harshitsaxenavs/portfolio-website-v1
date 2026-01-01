@@ -205,7 +205,7 @@ body.dark-mode .secondary-button:hover {
   padding: 80px;
   border-radius: 32px;
   background-image: var(--hero-gradient);
-  background-size: 700% 700%;
+  background-size: 600% 600%;
   animation: heroGradientShift 28s ease-in-out infinite;
   display: flex;
   flex-direction: column;
@@ -490,4 +490,5 @@ body.dark-mode .about-me-text, body.dark-mode .contact-info-text { color: #aebfd
 .reveal-element { opacity: 0; transform: translateY(30px); transition: 0.8s ease; }
 
 .reveal-element.is-revealed { opacity: 1; transform: translateY(0); }
+
 
