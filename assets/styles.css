@@ -34,7 +34,7 @@ body.dark-mode {
   
   --hero-gradient: linear-gradient(120deg,#0b0f1a,#0f172a,#111827,#1e1b4b,#1e293b,#1f2937,#0f172a,#020617,#111827,#1e293b,#1e1b4b,#020617);
 }
-}
+
 
 /* --- GLOBAL --- */
 * { box-sizing: border-box; }
@@ -453,6 +453,7 @@ body.dark-mode .about-me-text, body.dark-mode .contact-info-text { color: #aebfd
 .reveal-element { opacity: 0; transform: translateY(30px); transition: 0.8s ease; }
 
 .reveal-element.is-revealed { opacity: 1; transform: translateY(0); }
+
 
 
 
