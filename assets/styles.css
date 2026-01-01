@@ -481,15 +481,15 @@ body.dark-mode .about-me-text, body.dark-mode .contact-info-text { color: #aebfd
 
 @keyframes heroGradientShift {
   0%   { background-position: 0% 50%; }
-  20%  { background-position: 25% 50%; }
-  40%  { background-position: 50% 50%; }
-  60%  { background-position: 75% 50%; }
-  80%  { background-position: 50% 50%; }
+  25%  { background-position: 50% 50%; }
+  50%  { background-position: 100% 50%; }
+  75%  { background-position: 50% 50%; }
   100% { background-position: 0% 50%; }
 }
 .reveal-element { opacity: 0; transform: translateY(30px); transition: 0.8s ease; }
 
 .reveal-element.is-revealed { opacity: 1; transform: translateY(0); }
+
 
 
 
