@@ -178,7 +178,7 @@ body.dark-mode .secondary-button:hover {
   border-radius: 32px;
   background-image: var(--hero-gradient);
   background-size: 300% 300%;
-  animation: gradientShift 15s ease infinite;
+  animation: gradientShift 15s ease infinite alternate;
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -450,17 +450,10 @@ body.dark-mode .about-me-text, body.dark-mode .contact-info-text { color: #aebfd
 }
 
 /* --- ANIMATIONS --- */
-
-@keyframes heroGradientShift {
-  0%   { background-position: 0% 50%; }
-  25%  { background-position: 50% 50%; }
-  50%  { background-position: 100% 50%; }
-  75%  { background-position: 50% 50%; }
-  100% { background-position: 0% 50%; }
-}
 .reveal-element { opacity: 0; transform: translateY(30px); transition: 0.8s ease; }
 
 .reveal-element.is-revealed { opacity: 1; transform: translateY(0); }
+
 
 
 
