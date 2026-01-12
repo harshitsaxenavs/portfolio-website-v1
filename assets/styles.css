@@ -451,7 +451,7 @@ body.dark-mode .about-me-text, body.dark-mode .contact-info-text { color: #aebfd
   }
   .header-nav.active { display: flex; }
   .mobile-menu-button { display: flex; }
-  /* .header-buttons .primary-button { display: none; } Hide resume on mobile */
+  .header-buttons .primary-button { display: none; } /* Hide resume on mobile */
   
   .hero-section { padding: 40px 30px; min-height: 500px; }
   .hero-heading { font-size: 2.5rem; }
