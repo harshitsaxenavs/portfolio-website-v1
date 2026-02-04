@@ -450,12 +450,12 @@ body.dark-mode .about-me-text, body.dark-mode .contact-info-text { color: #aebfd
   .mobile-menu-button { display: flex; }
   .header-buttons .primary-button { display: none; } /* Hide resume on mobile */
   
-  .hero-section { padding: 40px 30px; min-height: 500px; }
+  .hero-section { padding: 40px 30px; min-height: 550px; }
   .hero-heading { font-size: 2.5rem; }
   
   .projects-grid, .testimonials-grid { grid-template-columns: 1fr; }
   
-  #my-form { padding: 25px; }
+  #my-form { padding: 18px; }
 }
 
 @media (max-width: 480px) {
