@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const header = document.querySelector('.main-header');
-    
+
     const progressBar = document.createElement('div');
     progressBar.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,#0084ff,#83bfff);z-index:1001;transform:scaleX(0);transform-origin:0 50%;transition:transform 0.1s ease-out;pointer-events:none;';
     body.appendChild(progressBar);
@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateScrollVisuals() {
         const currentScrollY = window.scrollY;
-        
+
         if (header) {
             header.classList.toggle('scrolled', currentScrollY > 50);
-            header.style.transform = (currentScrollY > lastScrollY && currentScrollY > 100) 
-                ? 'translateY(-100%)' 
+            header.style.transform = (currentScrollY > lastScrollY && currentScrollY > 100)
+                ? 'translateY(-100%)'
                 : 'translateY(0)';
         }
 
@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (toggleBtn) toggleBtn.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
     }
 
-    let currentTheme = localStorage.getItem('portfolio-theme') || 
-                       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    let currentTheme = localStorage.getItem('portfolio-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     setTheme(currentTheme);
 
     if (toggleBtn) {
@@ -95,10 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            
+
             if (menu && menu.classList.contains('active')) {
                 menu.classList.remove('active');
                 if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typeEl = document.getElementById('typing-text');
     if (typeEl) {
-        const phrases = ["AI/ML Engineer.", "Data Scientist.", "Web Developer.", "UI/UX Designer."];
+        const phrases = ["AI/ML Engineer.", "LLM & RAG Developer", "Data Scientist.", "Web Developer."];
         let pIdx = 0, cIdx = 0, isDeleting = false;
 
         function typeLoop() {
