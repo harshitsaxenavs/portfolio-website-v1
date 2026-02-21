@@ -54,9 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal-element, .skill-item').forEach(el => observer.observe(el));
 
     const toggleBtn = document.getElementById('dark-mode-toggle');
-    const sunIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5Zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3Zm0-15a1 1 0 0 0 1 1h0a1 1 0 0 0 0-2h0a1 1 0 0 0-1 1Zm0 20a1 1 0 0 0 1 1h0a1 1 0 0 0 0-2h0a1 1 0 0 0-1 1Zm10-10a1 1 0 0 0-1 1h0a1 1 0 0 0 2 0h0a1 1 0 0 0-1-1ZM2 12a1 1 0 0 0-1 1h0a1 1 0 0 0 2 0h0a1 1 0 0 0-1-1Zm17.66-5.66a1 1 0 0 0 1.41 0h0a1 1 0 0 0 0-1.41h0a1 1 0 0 0-1.41 1.41Zm-14.14 14.14a1 1 0 0 0 1.41 0h0a1 1 0 0 0 0-1.41h0a1 1 0 0 0-1.41 1.41Zm0-14.14a1 1 0 0 0 0 1.41h0a1 1 0 0 0 1.41-1.41h0a1 1 0 0 0-1.41 0ZM19.07 19.07a1 1 0 0 0 0 1.41h0a1 1 0 0 0 1.41-1.41h0a1 1 0 0 0-1.41 0Z"/></svg>';
-    const moonIcon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2 1 1 0 0 0-1.33-1.13 10.14 10.14 0 1 0 13.64 10.64Z"/></svg>';
-
+    const sunIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+  const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
     function setTheme(theme) {
         body.classList.toggle('dark-mode', theme === 'dark');
         localStorage.setItem('portfolio-theme', theme);
@@ -114,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typeEl = document.getElementById('typing-text');
     if (typeEl) {
-        const phrases = ["AI/ML Engineer.", "LLM & RAG Developer", "Data Scientist.", "Web Developer."];
+        const phrases = ["AI/ML Engineer.", "LLM & RAG Developer.", "Data Scientist.", "Web Developer."];
         let pIdx = 0, cIdx = 0, isDeleting = false;
 
         function typeLoop() {
