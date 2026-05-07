@@ -1030,6 +1030,9 @@ body.dark-mode #my-form textarea:focus {
   .exp-title {
     font-size: 1.25rem;
   }
+  .certificate-badge{
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
