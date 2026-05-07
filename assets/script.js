@@ -134,4 +134,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         typeLoop();
     }
+
+    /* ── FORM */
+  const contactForm = document.getElementById('my-form');
+  const statusText = document.getElementById('my-form-status');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+      // 1. STOPS the browser from redirecting to Formspree
+      e.preventDefault(); 
+      
+      const btn = document.getElementById('submitBtn');
+      const originalText = btn.textContent;
+      
+      // 2. Change button to show loading state
+      btn.textContent = 'Sending...';
+      btn.style.pointerEvents = 'none';
+
+      try {
+        // 3. Send the data to Formspree in the background
+        const response = await fetch(e.target.action, {
+          method: contactForm.method,
+          body: new FormData(e.target),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          // 4. On Success: Change button, reset form, show message
+          btn.textContent = 'Message Sent ✓';
+          btn.style.backgroundColor = '#16a34a'; // Turn button green
+          contactForm.reset();
+          statusText.textContent = "Thanks! I'll get back to you soon.";
+          statusText.style.color = "#16a34a"; 
+        } else {
+          throw new Error('Network error');
+        }
+      } catch (error) {
+        // 5. On Error
+        btn.textContent = originalText;
+        statusText.textContent = "Oops! Something went wrong.";
+        statusText.style.color = "#ef4444"; 
+      } finally {
+        // 6. Reset everything back to normal after 5 seconds
+        setTimeout(() => { 
+          btn.textContent = originalText; 
+          btn.style.backgroundColor = ''; // Restore original color
+          statusText.textContent = "";
+          btn.style.pointerEvents = 'auto';
+        }, 5000);
+      }
+    });
+  }
 });
+
