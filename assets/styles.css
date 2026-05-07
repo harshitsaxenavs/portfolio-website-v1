@@ -447,6 +447,77 @@ body.dark-mode .bio-content p {
   justify-content: flex-start;
 }
 
+/* --- EXPERIENCE SECTION --- */
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-card {
+  background-color: var(--card-background-light);
+  border: 1px solid var(--border-light);
+  border-radius: 28px;
+  padding: 40px;
+  transition: transform 0.4s var(--ease-spring), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.exp-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.exp-meta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+body.dark-mode .exp-meta {
+  color: #8c9cb0;
+}
+
+.exp-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+}
+
+.exp-description {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+body.dark-mode .exp-description {
+  color: #aebfd4;
+}
+
 /* --- SKILLS SECTION --- */
 .skills-list-container {
   max-width: 100%;
@@ -945,6 +1016,19 @@ body.dark-mode #my-form textarea:focus {
 
   body.dark-mode .skill-category {
     border-bottom-color: var(--border-light);
+  }
+  
+  .experience-card {
+    padding: 30px 25px;
+  }
+  
+  .exp-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .exp-title {
+    font-size: 1.25rem;
   }
 }
 
