@@ -638,7 +638,7 @@ body.dark-mode .dark-invert {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 30px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -1017,7 +1017,7 @@ body.dark-mode #my-form textarea:focus {
   body.dark-mode .skill-category {
     border-bottom-color: var(--border-light);
   }
-  
+
   .experience-card {
     padding: 30px 25px;
   }
