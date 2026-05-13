@@ -333,16 +333,16 @@ body.dark-mode .secondary-button:hover {
 }
 
 .project-item:nth-child(1) .project-image {
-  background-image: linear-gradient(135deg, #21fff4 0%, #ff709e 100%);
+  background-image: linear-gradient(135deg, #6aefff 0%, #d4f9ff 100%);
 }
 .project-item:nth-child(2) .project-image {
-  background-image: linear-gradient(135deg, #b15fff 0%, #62b0ff 100%);
+  background-image: linear-gradient(135deg, #b15fff 0%, #e8d4ff 100%);
 }
 .project-item:nth-child(3) .project-image {
   background-image: linear-gradient(135deg, #ff6aff 0%, #ffddfe 100%);
 }
 .project-item:nth-child(4) .project-image {
-  background-image: linear-gradient(135deg, #a8edea 0%, #8ec5fc 100%);
+  background-image: linear-gradient(135deg, #ffb06a 0%, #ffecd4 100%);
 }
 
 .project-item:hover {
