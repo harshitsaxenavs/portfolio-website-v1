@@ -326,13 +326,13 @@ body.dark-mode .hero-section {
   align-items: flex-end;
   padding: 14px 18px;
 }
-.project-item:nth-child(1) .project-image { background: linear-gradient(145deg, #C77DFF 0%, #E0AAFF 100%); }
-.project-item:nth-child(2) .project-image { background: linear-gradient(145deg, #0077B6 0%, #00B4D8 100%); }
-.project-item:nth-child(3) .project-image { background: linear-gradient(145deg, #D62828 0%, #F77F00 100%); }
+.project-item:nth-child(1) .project-image { background: linear-gradient(145deg, #FF6B35 0%, #FF9A5C 100%); }
+.project-item:nth-child(2) .project-image { background: linear-gradient(145deg, #6C63FF 0%, #A78BFA 100%); }
+.project-item:nth-child(3) .project-image { background: linear-gradient(145deg, #00C49A 0%, #00B4D8 100%); }
 
-body.dark-mode .project-item:nth-child(1) .project-image { background: linear-gradient(145deg, #1A0030 0%, #2D0050 100%); }
-body.dark-mode .project-item:nth-child(2) .project-image { background: linear-gradient(145deg, #001A2C 0%, #002D4A 100%); }
-body.dark-mode .project-item:nth-child(3) .project-image { background: linear-gradient(145deg, #2D0000 0%, #4A0F00 100%); }
+body.dark-mode .project-item:nth-child(1) .project-image { background: linear-gradient(145deg, #3D1A00 0%, #5C2E00 100%); }
+body.dark-mode .project-item:nth-child(2) .project-image { background: linear-gradient(145deg, #1A1440 0%, #2D2260 100%); }
+body.dark-mode .project-item:nth-child(3) .project-image { background: linear-gradient(145deg, #003D35 0%, #005C50 100%); }
 
 .project-image-label {
   font-size: 0.68rem;
