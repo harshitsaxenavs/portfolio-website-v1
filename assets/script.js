@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.main-header');
 
     const progressBar = document.createElement('div');
-    progressBar.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:3px;background:linear-gradient(#E8632A,#C94A0A);z-index:1001;transform:scaleX(0);transform-origin:0 50%;transition:transform 0.1s ease-out;pointer-events:none;';
+    progressBar.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:3px;background:#4F46E5;z-index:1001;transform:scaleX(0);transform-origin:0 50%;transition:transform 0.1s ease-out;pointer-events:none;';
     body.appendChild(progressBar);
 
     let lastScrollY = window.scrollY;
@@ -113,7 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typeEl = document.getElementById('typing-text');
     if (typeEl) {
-        const phrases = ["AI/ML Engineer.", "LLM & RAG Developer.", "Data Scientist.", "Web Developer."];
+        const phrases = ['AI/ML Engineer',
+    'Machine Learning Researcher',
+    'Data Scientist',
+    'Problem Solver'];
         let pIdx = 0, cIdx = 0, isDeleting = false;
 
         function typeLoop() {
