@@ -1,493 +1,480 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#FAFAFA" />
-  <title>Harshit Saxena — AI/ML Engineer</title>
-  <meta name="description"
-    content="Portfolio of Harshit Saxena — AI/ML Engineer specialising in LLMs, RAG pipelines, and production ML systems." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshit Saxena — AI/ML Engineer</title>
+<link rel="canonical" href="https://harshitsaxena.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c94a0a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-style='italic' font-size='32' text-anchor='middle' fill='%23fff'%3EHS%3C/text%3E%3C/svg%3E">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script src="assets/script.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/styles.css">
+<script src="./assets/script.js" defer></script>
 </head>
-
 <body>
-  <header class="main-header">
-    <div class="header-branding">
-      <p class="portfolio-title"><a href="#hero-section">Harshit Saxena</a></p>
+<a class="skip-link" href="#about">Skip to content</a>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="site-header" id="nav">
+  <a href="#" class="nav-logo" aria-label="Harshit Saxena Home">Harshit Saxena</a>
+  <nav aria-label="Main Navigation">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certs">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-right">
+    <button class="btn-theme" id="themeBtn" aria-label="Toggle Dark Mode">Dark</button>
+    <a href="https://drive.google.com/file/d/1AhNtMm-NiQM2SuYPU0R795iY1iquo2gw/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-resume">Resume</a>
+    <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="drawer">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+  <div class="drawer-header">
+    <div class="drawer-footer-row">
+      <button class="drawer-theme-btn" id="drawerThemeBtn" aria-label="Toggle Dark Mode">Dark</button>
     </div>
-    <div class="header-actions">
-      <nav class="header-nav">
-        <a href="#hero-section" class="nav-link">Home</a>
-        <a href="#projects-section" class="nav-link">Projects</a>
-        <a href="#about-me-section" class="nav-link">About</a>
-        <a href="#experience-section" class="nav-link">Experience</a>
-        <a href="#skills-section" class="nav-link">Skills</a>
-        <a href="#certificates-section" class="nav-link">Certifications</a>
-        <a href="#contact-section" class="nav-link">Contact</a>
-        <a href="https://drive.google.com/file/d/1AQBSZ95NYL4wYVfBNaEhAqmQ4ie3m7k7/view?usp=sharing"
-          class="primary-button" target="_blank" rel="noopener">Resume</a>
-      </nav>
-      <div class="header-buttons">
-        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode"></button>
+    <button class="drawer-close" id="drawerClose" aria-label="Close mobile menu">✕</button>
+  </div>
+  <nav class="drawer-links" aria-label="Drawer Navigation">
+    <a href="#about"><span>About</span><span class="d-num">01</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#academics"><span>Academics</span><span class="d-num">02</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#experience"><span>Experience</span><span class="d-num">03</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#projects"><span>Projects</span><span class="d-num">04</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#achievements"><span>Achievements</span><span class="d-num">05</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#skills"><span>Skills</span><span class="d-num">06</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#certs"><span>Certifications</span><span class="d-num">07</span></a>
+    <div class="drawer-divider" aria-hidden="true"></div>
+    <a href="#contact"><span>Contact</span><span class="d-num">08</span></a>
+  </nav>
+  <div class="drawer-footer">
+    <a href="https://drive.google.com/file/d/1AhNtMm-NiQM2SuYPU0R795iY1iquo2gw/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="drawer-resume">Resume</a>
+  </div>
+</aside>
+
+<main>
+  <section id="hero">
+    <div class="hero-tag">
+      <span class="hero-tag-dot" aria-hidden="true"></span>
+      <span><strong>Open to AI/ML Opportunities</strong></span>
+    </div>
+    <h1 class="hero-name">Harshit<br><em>Saxena</em></h1>
+    <p class="hero-role"><span>AI / ML Engineer</span> & <span>Machine Learning Researcher</span></p>
+    <div class="hero-bottom">
+      <p class="hero-desc">AI/ML Engineer focused on building intelligent, real-world applications across Machine Learning, Generative AI, LLMs and RAG systems.</p>      
+      <div class="hero-actions">
+        <div class="btn-group">
+          <a href="#projects" class="btn-primary">View Work</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
       </div>
-      <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Toggle Navigation Menu"
-        aria-expanded="false">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-          <path fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-            clip-rule="evenodd" />
-        </svg>
-      </button>
     </div>
-  </header>
+  </section>
 
-  <main class="main-content">
-    <div class="content-wrapper">
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item"><b>CGPA 9.82</b></span><span class="t-dot"></span>
+      <span class="ticker-item">Institute Rank 1 &mdash; B.Tech CSE (AI &amp; ML)</span><span class="t-dot"></span>
+      <span class="ticker-item"><b>RAG &middot; LLMs &middot; LangChain</b></span><span class="t-dot"></span>
+      <span class="ticker-item">NIELIT Summer Intern 2026</span><span class="t-dot"></span>
+      <span class="ticker-item"><b>Techminds Hackathon Runner-Up</b></span><span class="t-dot"></span>
+      <span class="ticker-item">NIELIT Government of India Certified</span><span class="t-dot"></span>
+      <span class="ticker-item"><b>Deloitte Australia Certified</b></span><span class="t-dot"></span>
+      <span class="ticker-item">Google Cloud Certified</span><span class="t-dot"></span>
+      
+      <span class="ticker-item"><b>CGPA 9.82</b></span><span class="t-dot"></span>
+      <span class="ticker-item">Institute Rank 1 &mdash; B.Tech CSE (AI &amp; ML)</span><span class="t-dot"></span>
+      <span class="ticker-item"><b>RAG &middot; LLMs &middot; LangChain</b></span><span class="t-dot"></span>
+      <span class="ticker-item">NIELIT Summer Intern 2026</span><span class="t-dot"></span>
+      <span class="ticker-item"><b>Techminds Hackathon Runner-Up</b></span><span class="t-dot"></span>
+      <span class="ticker-item">NIELIT Government of India Certified</span><span class="t-dot"></span>
+      <span class="ticker-item"><b>Deloitte Australia Certified</b></span><span class="t-dot"></span>
+      <span class="ticker-item">Google Cloud Certified</span><span class="t-dot"></span>
+    </div>
+  </div>
 
-      <section id="hero-section" class="hero-section reveal-element">
-        <div class="hero-container">
+  <!-- 01 ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <figure class="photo-wrap reveal">
+        <div class="photo">
+          <picture>
+            <source srcset="Harshit.webp" type="image/webp">
+            <img src="./assets/Harshit-900.jpg" width="900" height="900" loading="lazy" decoding="async" onerror="this.style.display='none'" alt="Portrait of Harshit Saxena">
+          </picture>
+          <div class="photo-init" aria-hidden="true">HS</div>
+        </div>
+      </figure>
+      <div>
+        <div class="reveal">
+          <div class="sec-eyebrow">01 &mdash; About</div>
+          <h2 class="sec-title">The person behind <em>code.</em></h2>
+        </div>
+        <div class="about-content">
+          <p class="reveal d1">Final-year B.Tech CSE (AI & ML) at Guru Gobind Singh Indraprastha University, Delhi. Focused on engineering end-to-end Generative AI applications, spanning RAG pipelines, embedding-based retrieval, semantic search, and LLM-powered applications and agents.</p>
+          <p class="reveal d2">I bring a strong foundation in data structures and algorithms, with an emphasis on translating technical approaches into functional, deployable systems.</p>
+        </div>
+        <div class="about-actions reveal d3">
+          <a href="https://drive.google.com/file/d/1AhNtMm-NiQM2SuYPU0R795iY1iquo2gw/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary">Download Resume</a>
+          <a href="https://github.com/harshitsaxenavs" target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="hero-left">
-             <span class="hero-badge">
-              <span class="hero-badge-dot"></span>
-              Open to AI/ML opportunities
-            </span>
-            <h1 class="hero-heading">
-              Harshit Saxena<br />
-              <span id="typing-text"></span><span class="typing-cursor"></span>
-            </h1>
-            <p class="hero-subheading">
-              Engineering end-to-end AI systems using LLMs, RAG architectures, and applied machine learning.
-            </p>
-             <div class="hero-btn-row">
-              <a href="#projects-section" class="primary-button hero-btn">Explore My Work</a>
-              <a href="#contact-section" class="secondary-button hero-btn">Get In Touch</a>
-            </div>
-          </div>
+  <!-- 02 ACADEMICS -->
+  <section id="academics" class="alt">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="reveal">
+        <div class="sec-eyebrow">02 &mdash; Academics</div>
+        <h2 class="sec-title">Academic <em>Record</em></h2>
+      </div>
+    </div>
 
-          <div class="hero-image">
-            <div class="image-ring">
-              <img src="assets/harshit.jpg" alt="Harshit Saxena" />
-            </div>
+    <div class="acad-grid">
+      <article class="acad-card reveal">
+        <div class="acad-ring" id="acadRing">
+          <svg viewBox="0 0 200 200" aria-hidden="true">
+            <circle class="ring-bg" cx="100" cy="100" r="88"></circle>
+            <circle class="ring-fg" cx="100" cy="100" r="88"></circle>
+          </svg>
+          <div class="ring-center">
+            <span class="ring-val" data-count="9.82"></span>
+            <span class="ring-lbl">CGPA &middot; out of 10</span>
           </div>
         </div>
-      </section>
-
-      <section id="projects-section">
-        <h2 class="section-heading reveal-element">My Latest Projects</h2>
-        <div class="projects-grid">
-
-          <div class="project-item reveal-element">
-            <div class="project-image" role="img" aria-label="RAG AI Teaching Assistant">
-              <div class="project-image-label">RAG · LLM</div>
-            </div>
-            <div class="project-details">
-              <h3 class="project-title">RAG AI Teaching Assistant</h3>
-              <p class="project-description">
-                Converts video lectures into searchable embeddings for LLM-powered Q&A. Features Whisper transcription,
-                FAISS semantic search, and full offline privacy with Llama 3.2.
-              </p>
-              <div class="project-tech-stack">
-                <span>Python</span><span>Ollama</span><span>Whisper</span><span>FAISS</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/harshitsaxenavs/RAG-based-AI-Teaching-Assistant" target="_blank"
-                  class="primary-button small-btn">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-item reveal-element">
-            <div class="project-image" role="img" aria-label="House Rent Prediction Model">
-              <div class="project-image-label">ML · Flask</div>
-            </div>
-            <div class="project-details">
-              <h3 class="project-title">House Rent Prediction</h3>
-              <p class="project-description">
-                Random Forest regression trained on 100K records, achieving R² of 0.963. Migrated from Streamlit to a
-                Vercel-hosted Flask API, cutting load latency by 90%.
-              </p>
-              <div class="project-tech-stack">
-                <span>Numpy</span><span>Pandas</span><span>Scikit-Learn</span><span>Flask</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/harshitsaxenavs/House-Rent-Prediction-Model" target="_blank"
-                  class="primary-button small-btn">GitHub</a>
-                <a href="https://house-rent-prediction-model.vercel.app/" target="_blank"
-                  class="secondary-button small-btn">Live Demo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-item reveal-element">
-            <div class="project-image" role="img" aria-label="NotesGPT AI Assistant">
-              <div class="project-image-label">NLP · Streamlit</div>
-            </div>
-            <div class="project-details">
-              <h3 class="project-title">NotesGPT AI Assistant</h3>
-              <p class="project-description">
-                PDF Q&A assistant using semantic vector search. Features session caching, real-time indicators,
-                relevance filtering, and downloadable AI-generated summaries.
-              </p>
-              <div class="project-tech-stack">
-                <span>LangChain</span><span>FAISS</span><span>HuggingFace</span><span>Streamlit</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/harshitsaxenavs/NotesGPT-AI" target="_blank"
-                  class="primary-button small-btn">GitHub</a>
-                <a href="https://notesgpt-ai.streamlit.app/" target="_blank" class="secondary-button small-btn">Live
-                  Demo</a>
-              </div>
-            </div>
-          </div>
-
+        <div class="rank-medal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5"/></svg>
+          Rank 1
         </div>
-      </section>
+      </article>
 
-      <section id="about-me-section" class="reveal-element">
-        <h2 class="section-heading">About Me</h2>
-        <div class="bio-container">
-          <div class="bio-card-modern">
-            <h3 class="bio-intro">Building AI systems that work in the real world.</h3>
-            <div class="bio-content">
-              <p>
-                B.Tech in Computer Science & Engineering with Minor in AI & ML <strong>@</strong><strong> Guru Gobind
-                  Singh Indraprastha
-                  University Delhi, India</strong>
-                specialising in AI &amp; Machine Learning. I bridge the gap between theory and
-                production — turning research concepts into deployed, working systems.
-              </p>
-              <p>
-                Core focus: end-to-end ML pipelines, Generative AI applications, RAG architectures,
-                semantic search, and locally-deployed LLM agents.
-              </p>
-              <p>
-                Actively targeting <strong>AI/ML</strong> opportunities with the goal
-                of contributing to production systems that push what's possible.
-              </p>
-            </div>
+      <div class="acad-main">
+        <article class="acad-inst reveal d1">
+          <div class="acad-when">Aug 2023 &ndash; Jun 2027</div>
+          <h3 class="acad-degree"><i>B.Tech in Computer Science &amp; Engineering</i></h3>
+          <p class="acad-spec">AI &amp; ML Specialization</p>
+          <p class="acad-school">Guru Gobind Singh Indraprastha University, Delhi, India.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-            <div class="achievements-row">
-              <div class="achievement-tile">
-                <span class="achievement-val">Rank 1</span>
-                <span class="achievement-label">Institute Rank, AI/ML Dept.</span>
-              </div>
-              <div class="achievement-tile">
-                <span class="achievement-val">9.82</span>
-                <span class="achievement-label">CGPA / 10</span>
-              </div>
-            </div>
+  <!-- 03 EXPERIENCE -->
+  <section id="experience">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="reveal">
+        <div class="sec-eyebrow">03 &mdash; Experience</div>
+        <h2 class="sec-title">Experience &amp; <em>Leadership</em></h2>
+        <p class="sec-desc">Two internships at NIELIT, Government of India & student leadership.</p>
+      </div>
+    </div>
+    <div class="ach-list">
+      <div class="sub-head reveal">internships</div>
+      <article class="ach-item reveal">
+        <div>
+          <h3 class="ach-title">Summer Intern</h3>
+          <p class="exp-meta">NIELIT (National Institute of Electronics &amp; Information Technology), Govt. of India&nbsp;&middot;&nbsp;Delhi&nbsp;&middot;&nbsp;Jun 2026 &ndash; Aug 2026</p>
+          <ul class="exp-points">
+            <li>Built <strong>MSIT Chatbot</strong>, a retrieval-grounded RAG assistant: keyword-scored retrieval over a curated knowledge base passes the top-k passages to a locally hosted Llama 3.2 model for fully on-device, zero-API-cost inference.</li>
+            <li>Iterated the system prompt across multiple versions to improve answer reliability and refusal behaviour; reached <strong>84% answer accuracy</strong> on a manually curated test set with ~1&ndash;2 s response latency.</li>
+          </ul>
+        </div>
+        <div class="ach-badge">Intern</div>
+      </article>
+      <article class="ach-item reveal d1">
+        <div>
+          <h3 class="ach-title">Data Science Trainee</h3>
+          <p class="exp-meta">NIELIT (National Institute of Electronics &amp; Information Technology), Govt. of India&nbsp;&middot;&nbsp;Delhi&nbsp;&middot;&nbsp;Jun 2025 &ndash; Jul 2025</p>
+          <ul class="exp-points">
+            <li>Engineered automated preprocessing and feature-extraction pipelines for structured data, applying statistical EDA to identify predictive signals and handle inconsistencies.</li>
+            <li>Trained and evaluated Scikit-Learn classification and regression models, using cross-validation and hyperparameter tuning to optimise predictive performance.</li>
+          </ul>
+        </div>
+        <div class="ach-badge">Trainee</div>
+      </article>
+    </div>
 
-            <div class="bio-footer">
-              <a href="mailto:harshitsaxenavs@gmail.com" class="primary-button bio-connect-btn">Let's Connect</a>
+    <div class="ach-list sub-block">
+      <div class="sub-head reveal">Positions of responsibility</div>
+      <article class="ach-item reveal">
+        <div>
+          <h3 class="ach-title">Web Development Domain at Microsoft Student Chapter</h3>
+          <p class="exp-meta">Delhi&nbsp;&middot;&nbsp;Oct 2023 &ndash; Oct 2025</p>
+          <ul class="exp-points">
+            <li>Developed and deployed responsive web applications for chapter initiatives, including building the live site and managing the project.</li>
+            <li>Collaborated with the technical team to support the digital infrastructure and technical execution of campus-wide coding competitions, including the AlgoArena coding challenge.</li>
+          </ul>
+        </div>
+        <div class="ach-badge">Microsoft Student Chapter</div>
+      </article>
+      <article class="ach-item reveal d1">
+        <div>
+          <h3 class="ach-title">UI/UX Domain at Microsoft Student Chapter</h3>
+          <p class="exp-meta">Delhi</p>
+          <ul class="exp-points">
+            <li>Designed user-centric wireframes and intuitive interfaces for various student chapter projects, ensuring a seamless user experience during collaborative hackathons.</li>
+            <li>Created visually engaging digital assets and prototypes to drive student engagement and promote participation in technical events and seminars.</li>
+          </ul>
+        </div>
+        <div class="ach-badge">Microsoft Student Chapter</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 PROJECTS -->
+  <section id="projects" class="alt">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="reveal">
+        <div class="sec-eyebrow">04 &mdash; Projects</div>
+        <h2 class="sec-title">Things I've <em>Built.</em></h2>
+      </div>
+    </div>
+    <div class="projects-list">
+      
+      <article class="project reveal d1">
+        <div class="proj-num" aria-hidden="true">01</div>
+        <div class="proj-body">
+          <h3 class="proj-title">RAG AI Teaching Assistant</h3>
+          <div class="proj-meta">
+            <span class="proj-type">AI / LLM / Local Inference</span>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">FAISS</span><span class="tag">Whisper</span><span class="tag">Llama 3.2</span><span class="tag">Ollama</span>
             </div>
+          </div>
+          <p class="proj-desc">Transforms video lectures into searchable vector embeddings for precise LLM queries. Automated audio extraction, Whisper transcription and JSON chunking feed FAISS semantic search with cosine similarity, returning timestamped citations. Runs fully offline and privacy-first.</p>
+          <div class="proj-links">
+            <a href="https://github.com/harshitsaxenavs/RAG-based-AI-Teaching-Assistant" target="_blank" rel="noopener noreferrer" class="link-btn link-filled">View on GitHub</a>
           </div>
         </div>
-      </section>
+        <div class="proj-year">2025</div>
+      </article>
 
-      <section id="experience-section">
-        <h2 class="section-heading reveal-element">Experience</h2>
-        <div class="experience-container">
-          <div class="experience-card reveal-element">
-            <div class="exp-header">
-              <div class="exp-title-group">
-                <h3 class="exp-title">Data Science Trainee</h3>
-                <p class="exp-meta">NIELIT (Govt. of India) &nbsp;·&nbsp; Jun 2025 – Jul 2025 &nbsp;·&nbsp; Delhi, India
-                </p>
-              </div>
-              <span class="exp-badge">Internship</span>
+      <article class="project reveal d2">
+        <div class="proj-num" aria-hidden="true">02</div>
+        <div class="proj-body">
+          <h3 class="proj-title">NotesGPT AI Assistant</h3>
+          <div class="proj-meta">
+            <span class="proj-type">AI / Streamlit / Production</span>
+            <div class="tags">
+              <span class="tag">Streamlit</span><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">HuggingFace</span>
             </div>
-            <ul class="exp-points">
-              <li>Optimised ML regression and classification models on real-world structured datasets using
-                Scikit-Learn, achieving measurable improvements in predictive accuracy.</li>
-              <li>Engineered end-to-end data pipelines covering preprocessing, feature engineering, and model
-                evaluation; applied statistical analysis to derive actionable insights from complex datasets.</li>
-            </ul>
+          </div>
+          <p class="proj-desc">Deployed PDF Q&amp;A assistant using semantic vector search. Optimised text chunking and multi-model retrieval, with session caching, real-time indicators, relevance-based filtering and downloadable AI-generated summaries.</p>
+          <div class="proj-links">
+            <a href="https://notesgpt-ai.streamlit.app/" target="_blank" rel="noopener noreferrer" class="link-btn link-filled">Live Application</a>
+            <a href="https://github.com/harshitsaxenavs/NotesGPT-AI" target="_blank" rel="noopener noreferrer" class="link-btn link-ghost">GitHub</a>
           </div>
         </div>
-      </section>
+        <div class="proj-year">2025</div>
+      </article>
 
-      <section id="skills-section">
-        <h2 class="section-heading reveal-element">Technical Skills</h2>
-        <div class="skills-list-container">
-
-          <div class="skill-row reveal-element">
-            <div class="skill-category">
-              <h3>Artificial Intelligence</h3>
-              <p>Architectures, models, and workflows</p>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag">Deep Learning</span>
-              <span class="skill-tag">LLMs</span>
-              <span class="skill-tag">Transformers</span>
-              <span class="skill-tag">NLP</span>
-              <span class="skill-tag">Generative AI</span>
-              <span class="skill-tag">RAG</span>
-              <span class="skill-tag">LangChain</span>
-              <span class="skill-tag">HuggingFace</span>
+      <article class="project reveal d3">
+        <div class="proj-num" aria-hidden="true">03</div>
+        <div class="proj-body">
+          <h3 class="proj-title">House Rent Prediction</h3>
+          <div class="proj-meta">
+            <span class="proj-type">Machine Learning / EDA</span>
+            <div class="tags">
+              <span class="tag">Scikit-Learn</span><span class="tag">Random Forest</span><span class="tag">Pandas</span><span class="tag">Seaborn</span><span class="tag">Flask</span><span class="tag">Vercel</span>
             </div>
           </div>
-
-          <div class="skill-row reveal-element">
-            <div class="skill-category">
-              <h3>Languages &amp; Databases</h3>
-              <p>Core programming and data handling</p>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-                  alt="Python" /> Python</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-                  alt="C++" /> C++</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
-                  alt="SQL" /> SQL</span>
-            </div>
+          <p class="proj-desc">Regression models trained on 100K records, with EDA on rental patterns and Scikit-Learn pipelines for categorical features. Random Forest beat the Linear Regression baseline with an R&sup2; of 0.963.</p>
+          <div class="proj-links">
+            <a href="https://house-rent-prediction-model.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-btn link-filled">Live Application</a>
+            <a href="https://github.com/harshitsaxenavs/House-Rent-Prediction-Model" target="_blank" rel="noopener noreferrer" class="link-btn link-ghost">GitHub</a>
           </div>
-
-          <div class="skill-row reveal-element">
-            <div class="skill-category">
-              <h3>Machine Learning</h3>
-              <p>Algorithms and predictive modelling</p>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
-                  alt="PyTorch" /> PyTorch</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
-                  alt="Scikit-Learn" /> Scikit-Learn</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
-                  alt="TensorFlow" /> TensorFlow</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg"
-                  alt="Keras" /> Keras</span>
-            </div>
-          </div>
-
-          <div class="skill-row reveal-element">
-            <div class="skill-category">
-              <h3>Data Analysis &amp; Vis</h3>
-              <p>Processing and visualising data</p>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
-                  alt="NumPy" /> NumPy</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
-                  alt="Pandas" /> Pandas</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
-                  alt="Matplotlib" /> Matplotlib</span>
-              <span class="skill-tag"><img src="https://seaborn.pydata.org/_static/logo-mark-lightbg.svg"
-                  alt="Seaborn" /> Seaborn</span>
-            </div>
-          </div>
-
-          <div class="skill-row reveal-element">
-            <div class="skill-category">
-              <h3>MLOps &amp; Tools</h3>
-              <p>Deployment, versioning, and platforms</p>
-            </div>
-            <div class="skill-items">
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                  alt="Docker" /> Docker</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask"
-                  class="dark-invert" /> Flask</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
-                  alt="Vercel" class="dark-invert" /> Vercel</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
-                  alt="Streamlit" /> Streamlit</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg"
-                  alt="Jupyter" /> Jupyter</span>
-              <span class="skill-tag"><img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" />
-                Google Colab</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
-                Git</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                  alt="GitHub" class="dark-invert" /> GitHub</span>
-              <span class="skill-tag"><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg"
-                  alt="Kaggle" /> Kaggle</span>
-            </div>
-          </div>
-
         </div>
-      </section>
+        <div class="proj-year">2025</div>
+      </article>
 
-      <section id="certificates-section">
-        <h2 class="section-heading reveal-element">Certifications</h2>
-        <div class="certificates-grid">
+      <div class="reveal d3" style="display: flex; justify-content: flex-end; padding-top: 3rem;">
+        <a href="https://github.com/harshitsaxenavs" target="_blank" rel="noopener noreferrer" class="github-arrow-link">
+          View Other Projects <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-          <div class="certificate-card reveal-element">
-            <div class="certificate-badge">Government Accredited</div>
-            <div class="certificate-content">
-              <div class="issuer-logo"><img src="assets/nielit.png" alt="NIELIT Logo" /></div>
-              <div class="certificate-text">
-                <h3 class="certificate-title">Data Science Using Python</h3>
-                <p class="certificate-issuer">NIELIT (Govt. of India)</p>
-                <ul class="certificate-highlights">
-                  <li>Applied supervised ML algorithms to real-world structured datasets.</li>
-                  <li>Mastered Scikit-Learn pipelines for data preprocessing and evaluation.</li>
-                </ul>
-              </div>
-            </div>
-            <a href="https://drive.google.com/file/d/191syv3OWR54d4uDYHzYc7G1tL8l1X2EX/view" target="_blank"
-              class="certificate-link-btn">
-              View Credential
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </div>
-
-          <div class="certificate-card reveal-element">
-            <div class="certificate-badge">Professional Training</div>
-            <div class="certificate-content">
-              <div class="issuer-logo"><img src="assets/reliance.png" alt="Reliance Logo" /></div>
-              <div class="certificate-text">
-                <h3 class="certificate-title">AI &amp; ML Engineer</h3>
-                <p class="certificate-issuer">Reliance Foundation</p>
-                <ul class="certificate-highlights">
-                  <li>Trained in core ML concepts and end-to-end AI system development.</li>
-                  <li>Focused on bridging theoretical AI foundations with production-grade code.</li>
-                </ul>
-              </div>
-            </div>
-            <a href="https://drive.google.com/file/d/1N0xoPYrgLbOBukljpEE16ul4nFMULs1O/view" target="_blank"
-              class="certificate-link-btn">
-              View Credential
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </div>
-
-          <div class="certificate-card reveal-element">
-            <div class="certificate-badge">Industry Simulation</div>
-            <div class="certificate-content">
-              <div class="issuer-logo"><img src="assets/deloitte.png" alt="Deloitte Logo" /></div>
-              <div class="certificate-text">
-                <h3 class="certificate-title">Data Analytics</h3>
-                <p class="certificate-issuer">Deloitte Australia</p>
-                <ul class="certificate-highlights">
-                  <li>Cleaned datasets and visualised trends to generate actionable client insights.</li>
-                  <li>Simulated end-to-end data analyst workflows for client reporting.</li>
-                </ul>
-              </div>
-            </div>
-            <a href="https://drive.google.com/file/d/1OfBQAHeWgIVuqfg39YdXBmyG_Q9tWZ3S/view" target="_blank"
-              class="certificate-link-btn">
-              View Credential
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </div>
-
+  <!-- 05 ACHIEVEMENTS -->
+  <section id="achievements">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="reveal">
+        <div class="sec-eyebrow">05 &mdash; Recognition</div>
+        <h2 class="sec-title">Achievements &amp; <em>Highlights</em></h2>
+        <p class="sec-desc">Academic, competitive, and professional milestones.</p>
+      </div>
+    </div>
+    <div class="ach-list">
+      <article class="ach-item reveal">
+        <div>
+          <h3 class="ach-title">Academic Excellence Award — Institute Rank 1</h3>
+          <p class="ach-desc">Rank 1 in the B.Tech CSE department at MSIT for consistent academic performance across semesters. CGPA 9.82 / 10.</p>
         </div>
-      </section>
+        <div class="ach-badge">Academic</div>
+      </article>
+      <article class="ach-item reveal d1">
+        <div>
+          <h3 class="ach-title">Information Technology Excellence Award</h3>
+          <p class="ach-desc">Perfect score of 100 in Information Technology.</p>
+        </div>
+        <div class="ach-badge">Academic</div>
+      </article>
+      <article class="ach-item reveal d1">
+        <div>
+          <h3 class="ach-title">Techminds Hackathon — Runner-Up</h3>
+          <p class="ach-desc">Runner-up among 95+ participating teams for a data-driven sustainable-tech solution, judged on technical depth and real-world impact.</p>
+        </div>
+        <div class="ach-badge">Competitive</div>
+      </article>
+      <article class="ach-item reveal d2">
+        <div>
+          <h3 class="ach-title">AlgoUniversity Graphs Camp — Top 1,000</h3>
+          <p class="ach-desc">Completed the Graphs Camp, finishing among the top 1,000 of 40,000+ applicants.</p>
+        </div>
+        <div class="ach-badge">Competitive</div>
+      </article>
+    </div>
+  </section>
 
-      <section id="contact-section">
-        <h2 class="section-heading reveal-element">Get In Touch</h2>
-        <p class="contact-info-text reveal-element">
-          Have an opportunity, a project in mind, or just want to say hello?<br />
-          Reach out below or connect on social.
-        </p>
+  <!-- 06 SKILLS -->
+  <section id="skills" class="alt">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="reveal">
+        <div class="sec-eyebrow">06 &mdash; Technologies</div>
+        <h2 class="sec-title">Skills &amp; <em>Technologies</em></h2>
+      </div>
+    </div>
+    <div class="skills-grid reveal d1">
+      <article class="skill-card"><div class="skill-cat">Core Language</div><h3 class="skill-name">Python</h3><p class="skill-desc">Primary language for all ML, data science, and AI system development.</p></article>
+      <article class="skill-card"><div class="skill-cat">Languages &amp; Data</div><h3 class="skill-name">SQL &amp; C++</h3><p class="skill-desc">Database querying, systems programming and the DSA foundation behind it all.</p></article>
+      <article class="skill-card"><div class="skill-cat">Vector Search</div><h3 class="skill-name">FAISS, ChromaDB &amp; Semantic Search</h3><p class="skill-desc">Embedding-based retrieval pipelines and similarity search for RAG systems.</p></article>
+      <article class="skill-card"><div class="skill-cat">LLM Frameworks</div><h3 class="skill-name">LangChain &amp; LLM Pipelines</h3><p class="skill-desc">End-to-end orchestration of large language model workflows.</p></article>
+      <article class="skill-card"><div class="skill-cat">Local Inference</div><h3 class="skill-name">Ollama &amp; Local LLMs</h3><p class="skill-desc">Privacy-first local model deployment using open source models.</p></article>
+      <article class="skill-card"><div class="skill-cat">Generative AI</div><h3 class="skill-name">HuggingFace, Whisper &amp; Embeddings</h3><p class="skill-desc">Sentence-Transformers, speech-to-text pipelines and model hubs.</p></article>
+      <article class="skill-card"><div class="skill-cat">Deep Learning</div><h3 class="skill-name">PyTorch, TensorFlow &amp; Keras</h3><p class="skill-desc">ANNs, CNNs, RNNs, Transformers and attention mechanisms.</p></article>
+      <article class="skill-card"><div class="skill-cat">Machine Learning</div><h3 class="skill-name">Scikit-Learn</h3><p class="skill-desc">Supervised and unsupervised learning, pipelines, cross-validation and tuning.</p></article>
+      <article class="skill-card"><div class="skill-cat">Data Science</div><h3 class="skill-name">Pandas, NumPy, Matplotlib &amp; Seaborn</h3><p class="skill-desc">Data analysis, feature engineering, and statistical visualisation.</p></article>
+      <article class="skill-card"><div class="skill-cat">Deployment</div><h3 class="skill-name">Flask, Streamlit, Vercel &amp; Docker</h3><p class="skill-desc">Shipping AI-powered web apps and APIs to production.</p></article>
+      <article class="skill-card"><div class="skill-cat">Frontend</div><h3 class="skill-name">HTML, CSS &amp; JavaScript</h3><p class="skill-desc">Building responsive, accessible user interfaces for the web.</p></article>
+      <article class="skill-card"><div class="skill-cat">Tooling</div><h3 class="skill-name">Git, GitHub, Jupyter, Colab &amp; Kaggle</h3><p class="skill-desc">Version control and notebook-based experimentation workflows.</p></article>
+    </div>
+  </section>
+
+  <!-- 07 CERTIFICATIONS -->
+  <section id="certs">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="reveal">
+        <div class="sec-eyebrow">07 &mdash; Certifications</div>
+        <h2 class="sec-title"><em>Certifi</em>cations</h2>
+        <p class="sec-desc">Verified credentials from government and global industry leaders.</p>
+      </div>
+    </div>
+    <div class="cert-list">
+      <article class="cert-item reveal d1">
+        <div>
+          <div class="cert-issuer">Google Cloud</div>
+          <h3 class="cert-name">Introduction to Generative AI</h3>
+          <p class="cert-desc">Fundamentals of Generative AI and large language models.</p>
+        </div>
+        <a href="https://www.skills.google/public_profiles/4678ac5c-3c85-48cd-946b-1993135e0147/badges/22057958" target="_blank" rel="noopener noreferrer" class="cert-link">View Credential</a>
+      </article>
+      <article class="cert-item reveal d2">
+        <div>
+          <div class="cert-issuer">Google Cloud</div>
+          <h3 class="cert-name">Introduction to Large Language Models</h3>
+          <p class="cert-desc">Core concepts and practical applications of LLMs.</p>
+        </div>
+        <a href="https://www.skills.google/public_profiles/4678ac5c-3c85-48cd-946b-1993135e0147/badges/22058038" target="_blank" rel="noopener noreferrer" class="cert-link">View Credential</a>
+      </article>
+      <article class="cert-item reveal d3">
+        <div>
+          <div class="cert-issuer">NIELIT &mdash; Government of India</div>
+          <h3 class="cert-name">Data Science using Python</h3>
+          <p class="cert-desc">Applied ML to real-world structured datasets with NumPy, Pandas, Matplotlib, Seaborn and Scikit-Learn.</p>
+        </div>
+        <a href="https://drive.google.com/file/d/191syv3OWR54d4uDYHzYc7G1tL8l1X2EX/view" target="_blank" rel="noopener noreferrer" class="cert-link">View Credential</a>
+      </article>
+      <article class="cert-item reveal d4">
+        <div>
+          <div class="cert-issuer">Deloitte Australia</div>
+          <h3 class="cert-name">Data Analytics</h3>
+          <p class="cert-desc">Simulated a Data Analyst role — cleaned data, visualised trends, and generated actionable client insights.</p>
+        </div>
+        <a href="https://drive.google.com/file/d/1OfBQAHeWgIVuqfg39YdXBmyG_Q9tWZ3S/view" target="_blank" rel="noopener noreferrer" class="cert-link">View Credential</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 08 CONTACT -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="sec-eyebrow">08 &mdash; Contact</div>
+        <h2 class="contact-heading">Let's<br>build<br><em>together.</em></h2>
+        <p class="c-sub">Open to AI/ML engineering roles, PPO-converting internships, or a conversation about AI.</p>
+        <div class="contact-details">
+          <div class="contact-row"><span class="contact-lbl">Email</span><span class="contact-val"><a href="mailto:harshitsaxenavs@gmail.com">harshitsaxenavs@gmail.com</a></span></div>
+          <div class="contact-row"><span class="contact-lbl">Location</span><span class="contact-val">Delhi, India</span></div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/harshitsaxenavs" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/harshit-saxena-vs/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="reveal d2">
+        <div class="recruiter-callout" style="margin-top: 0; margin-bottom: 2.5rem;">
+          <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Recruiter</h4>
+          <p>Hiring for AI/ML or Software Engineering roles? Reach out via the form and your message will route straight to my primary inbox for immediate review.</p>
+        </div>
 
         <form class="contact-form" id="my-form" action="https://formspree.io/f/mkgbbbwl" method="POST">
-          <input type="hidden" name="_next" value="https://harshitsaxena.vercel.app/" />
-
+          <input type="hidden" name="_next" value="https://harshitsaxena.vercel.app/">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
             </div>
             <div class="form-group">
               <label class="form-label" for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+              <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" required>
             </div>
           </div>
-
           <div class="form-group">
             <label class="form-label" for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell me about the opportunity..." required></textarea>
           </div>
-
-          <button type="submit" class="primary-button" id="submitBtn" style="display:flex;margin:20px auto">
-            Send Message
-          </button>
-          <p id="my-form-status" style="font-size:0.85rem;text-align:center;margin-top:-0.5rem;"></p>
+          <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+          <p id="my-form-status" role="status" aria-live="polite" style="font-size: 0.85rem; text-align: center; margin-top: -0.5rem;"></p>
         </form>
-
-        <div class="social-links reveal-element">
-          <a href="https://www.linkedin.com/in/harshit-saxena-vs/" class="social-item" target="_blank"
-            aria-label="LinkedIn profile">
-            <div class="social-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M20.447 20.452h-3.554v-5.567c0-1.325-.028-3.034-1.854-3.034-1.855 0-2.14 1.444-2.14 2.939v5.662H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.854 3.37-1.854 3.602 0 4.267 2.366 4.267 5.424v6.221zM5.006 7.426c-1.334 0-2.342-.988-2.342-2.337 0-1.353 1.008-2.342 2.342-2.342 1.334 0 2.34.989 2.34 2.342 0 1.349-1.006 2.337-2.34 2.337zm1.785 13.026H3.22V9h3.571v11.452z" />
-              </svg>
-            </div>
-            <p>LinkedIn</p>
-          </a>
-          <a href="https://github.com/harshitsaxenavs" class="social-item" target="_blank" aria-label="GitHub profile">
-            <div class="social-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.599.111.793-.261.793-.577V20.17c-3.337.724-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.09-.744.081-.73.081-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.301-1.23 3.301-1.23.652 1.652.241 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.785 24 17.305 24 12c0-6.627-5.373-12-12-12z" />
-              </svg>
-            </div>
-            <p>GitHub</p>
-          </a>
-          <a href="mailto:harshitsaxenavs@gmail.com" class="social-item" aria-label="Send email">
-            <div class="social-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5H20zm0 12H4V8l8 5 8-5v10z" />
-              </svg>
-            </div>
-            <p>Email</p>
-          </a>
-        </div>
-      </section>
-
+      </div>
     </div>
-  </main>
+  </section>
+</main>
 
-  <footer class="main-footer">
-    <div class="footer-content">
-      <p class="copyright-text">© 2026 Harshit Saxena. All rights reserved.</p>
-    </div>
-  </footer>
+<footer class="site-footer">
+  <span class="foot-copy">&copy; 2026 Harshit Saxena</span>
+</footer>
+
 </body>
-
 </html>
